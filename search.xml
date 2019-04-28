@@ -16,7 +16,7 @@
   <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2Funcategorized%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartSubmithexo clean ——清除缓存hexo g —– 提交到仓库hexo s —– 查看当前状态hexo d —– 开始部署（由于github的原因，部署要等一定时间才可以看到更新的状态，大概3-5分钟）1234$ hexo clean$ hexo g$ hexo s$ hexo d Create a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartSubmit现在主要一步就可以搞定部署和提交 @honggit: 更新hexo d –g ——部署加提交到Github12$ hexo clean$ hexo d --g hexo clean ——清除缓存hexo g —– 提交到仓库hexo s —– 查看当前状态hexo d —– 开始部署（由于github的原因，部署要等一定时间才可以看到更新的状态，大概3-5分钟）1234$ hexo clean$ hexo g$ hexo s$ hexo d Create a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <tags>
         <tag>标签1</tag>
       </tags>
