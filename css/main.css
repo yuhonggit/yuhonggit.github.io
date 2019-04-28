@@ -1783,7 +1783,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1d01ff;
+  background: #1aff7c;
 }
 .feed-link,
 .chat {
@@ -3069,4 +3069,10 @@ a#download {
 a#download:hover {
   background: #000;
   color: #fff;
+}
+* {
+  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword2.ico"), auto !important;
+}
+:active {
+  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"), auto !important;
 }
