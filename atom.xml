@@ -35,9 +35,16 @@
     <link href="http://yoursite.com/Testing/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/Testing/我的第一个博客/</id>
     <published>2019-04-27T03:42:58.000Z</published>
-    <updated>2019-04-28T11:52:37.569Z</updated>
+    <updated>2019-04-28T16:28:45.648Z</updated>
+    
+    <content type="html"><![CDATA[<p><a id="download" href="https://git-scm.com/download/win" target="_blank" rel="noopener"><i class="fa fa-download"></i><span> Download Now</span> </a></p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a id=&quot;download&quot; href=&quot;https://git-scm.com/download/win&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt;&lt;span&gt; Download Now
+      
     
     </summary>
     

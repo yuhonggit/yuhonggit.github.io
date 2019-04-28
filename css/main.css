@@ -1783,7 +1783,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d12ea4;
+  background: #14d044;
 }
 .feed-link,
 .chat {
@@ -3053,4 +3053,18 @@ span#inline-yellow {
   vertical-align: baseline;
   border-radius: 0;
   background-color: #f0ad4e;
+}
+a#download {
+  display: inline-block;
+  padding: 0 10px;
+  color: #000;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 2px;
+  transition: all 0.5s ease;
+  font-weight: bold;
+}
+a#download:hover {
+  background: #000;
+  color: #fff;
 }
