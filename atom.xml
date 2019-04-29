@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-28T12:08:13.636Z</updated>
+  <updated>2019-04-29T00:52:29.358Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>code try</title>
+    <link href="http://yoursite.com/uncategorized/code-try/"/>
+    <id>http://yoursite.com/uncategorized/code-try/</id>
+    <published>2019-04-29T00:50:42.000Z</published>
+    <updated>2019-04-29T00:52:29.358Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="This-is-the-code-trying"><a href="#This-is-the-code-trying" class="headerlink" title="This is the code trying"></a>This is the code trying</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SimpleSingleton</span> </span>&#123;  </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> SimpleSingleton singleInstance =  <span class="keyword">new</span> SimpleSingleton();  </span><br><span class="line"> </span><br><span class="line">    <span class="comment">//Marking default constructor private  </span></span><br><span class="line">    <span class="comment">//to avoid direct instantiation.  </span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">SimpleSingleton</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">    &#125;  </span><br><span class="line"> </span><br><span class="line">    <span class="comment">//Get instance for class SimpleSingleton  </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SimpleSingleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;  </span><br><span class="line"> </span><br><span class="line">        <span class="keyword">return</span> singleInstance;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;This-is-the-code-trying&quot;&gt;&lt;a href=&quot;#This-is-the-code-trying&quot; class=&quot;headerlink&quot; title=&quot;This is the code trying&quot;&gt;&lt;/a&gt;This is the code 
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>my code</title>

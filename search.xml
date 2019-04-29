@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[code try]]></title>
+    <url>%2Funcategorized%2Fcode-try%2F</url>
+    <content type="text"><![CDATA[This is the code trying1234567891011121314public class SimpleSingleton &#123; private static SimpleSingleton singleInstance = new SimpleSingleton(); //Marking default constructor private //to avoid direct instantiation. private SimpleSingleton() &#123; &#125; //Get instance for class SimpleSingleton public static SimpleSingleton getInstance() &#123; return singleInstance; &#125; &#125;]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[my code]]></title>
     <url>%2Funcategorized%2Fmy-code%2F</url>
     <content type="text"></content>
