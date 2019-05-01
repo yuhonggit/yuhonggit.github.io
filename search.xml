@@ -7,8 +7,14 @@
   </entry>
   <entry>
     <title><![CDATA[my code]]></title>
-    <url>%2Funcategorized%2Fmy-code%2F</url>
+    <url>%2F%E6%B5%8B%E8%AF%95%2Fmy-code%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[我的第一个博客]]></title>
