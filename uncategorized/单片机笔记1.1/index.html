@@ -433,7 +433,7 @@
           </span>
 		  
 		<span title="post.wordcount">
-			 | 569字 
+			 | 573字 
 		</span>
 		
 		<span title="post.min2read">
@@ -502,7 +502,7 @@
 --- | ------------- 
 1.3 | 自己手写一个工程（开源过）
 </code></pre><p>放一段代码</p>
-<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#include <span class="string">"key.h"</span></span><br><span class="line">#include <span class="string">"stm32f10x.h"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">void key_init(void)</span><br><span class="line">&#123;</span><br><span class="line">	RCC-&gt;APB2ENR|=<span class="number">1</span>&lt;&lt;<span class="number">2</span>;</span><br><span class="line">	RCC-&gt;APB2ENR|=<span class="number">1</span>&lt;&lt;<span class="number">6</span>;</span><br><span class="line">	</span><br><span class="line">	GPIOA-&gt;CRL&amp;=<span class="number">0XFFFFFFF0</span>;</span><br><span class="line">	GPIOA-&gt;CRL|=<span class="number">0X00000008</span>;<span class="comment">//上拉和下拉输入那块</span></span><br><span class="line">	GPIOE-&gt;CRL&amp;=<span class="number">0XFFF000FF</span>;</span><br><span class="line">	GPIOE-&gt;CRL|=<span class="number">0X00088800</span>;<span class="comment">//上拉和下拉输入那块</span></span><br><span class="line">	GPIOA-&gt;ODR|=<span class="number">0</span>&lt;&lt;<span class="number">0</span>;<span class="comment">//pa0先置低</span></span><br><span class="line">	GPIOE-&gt;ODR|=<span class="number">1</span>&lt;&lt;<span class="number">2</span>|<span class="number">1</span>&lt;&lt;<span class="number">3</span>|<span class="number">1</span>&lt;&lt;<span class="number">4</span>;<span class="comment">//pe2~4置高</span></span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#include &quot;key.h&quot;</span><br><span class="line">#include &quot;stm32f10x.h&quot;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">void key_init(void)</span><br><span class="line">&#123;</span><br><span class="line">	RCC-&gt;APB2ENR|=1&lt;&lt;2;</span><br><span class="line">	RCC-&gt;APB2ENR|=1&lt;&lt;6;</span><br><span class="line">	</span><br><span class="line">	GPIOA-&gt;CRL&amp;=0XFFFFFFF0;</span><br><span class="line">	GPIOA-&gt;CRL|=0X00000008;//上拉和下拉输入那块</span><br><span class="line">	GPIOE-&gt;CRL&amp;=0XFFF000FF;</span><br><span class="line">	GPIOE-&gt;CRL|=0X00088800;//上拉和下拉输入那块</span><br><span class="line">	GPIOA-&gt;ODR|=0&lt;&lt;0;//pa0先置低</span><br><span class="line">	GPIOE-&gt;ODR|=1&lt;&lt;2|1&lt;&lt;3|1&lt;&lt;4;//pe2~4置高</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -943,17 +943,20 @@
 
 
 
+
+
   
-    
-    
   
-  <script color="0,0,0" opacity="0.5" zindex="-1" count="79" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
+  
+  
 
 
 
+  
+  
 
 
 
@@ -969,6 +972,18 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/three/three.min.js"></script>
+
+  
+  <script src="/lib/three/three-waves.min.js"></script>
+
+  
+  <script src="/lib/three/canvas_lines.min.js"></script>
+
+  
+  <script src="/lib/three/canvas_sphere.min.js"></script>
 
 
   
