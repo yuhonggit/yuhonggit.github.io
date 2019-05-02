@@ -56,29 +56,6 @@
   </entry>
   
   <entry>
-    <title>我的第一个博客</title>
-    <link href="http://yoursite.com/Testing/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/Testing/我的第一个博客/</id>
-    <published>2019-04-27T03:42:58.000Z</published>
-    <updated>2019-04-28T16:28:45.648Z</updated>
-    
-    <content type="html"><![CDATA[<p><a id="download" href="https://git-scm.com/download/win" target="_blank" rel="noopener"><i class="fa fa-download"></i><span> Download Now</span> </a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a id=&quot;download&quot; href=&quot;https://git-scm.com/download/win&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;i class=&quot;fa fa-download&quot;&gt;&lt;/i&gt;&lt;span&gt; Download Now
-      
-    
-    </summary>
-    
-      <category term="Testing" scheme="http://yoursite.com/categories/Testing/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="http://yoursite.com/uncategorized/hello-world/"/>
     <id>http://yoursite.com/uncategorized/hello-world/</id>
@@ -98,6 +75,170 @@
     
     
       <category term="标签1" scheme="http://yoursite.com/tags/%E6%A0%87%E7%AD%BE1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>交互选择界面（c语言）</title>
+    <link href="http://yoursite.com/uncategorized/%E4%BA%A4%E4%BA%92%E9%80%89%E6%8B%A9%E7%95%8C%E9%9D%A2%EF%BC%88c%E8%AF%AD%E8%A8%80%EF%BC%89/"/>
+    <id>http://yoursite.com/uncategorized/交互选择界面（c语言）/</id>
+    <published>2019-04-09T10:06:36.000Z</published>
+    <updated>2019-05-02T02:40:53.468Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="选择交互式界面"><a href="#选择交互式界面" class="headerlink" title="选择交互式界面"></a><a href></a>选择交互式界面</h2><p> <strong>一个交互式界面是用户和终端交流的形式</strong>。是以用户为中心的设计流程，关注用户的使用流畅度和方便性，符合用户使用习惯的解决方案。交互不一定需要很华丽的界面，但是使用过程肯定是很人性化，减少用户思考返回的次数。<br>        无论在web开发，UI设计等，程序员构建了代码并且提交到终端，发布给用户，但是用户在使用时候面对着开发者的设计界面去操作时候，看到不同的交互式界面就有着怎么样的使用心情。<br>        c语言也涉及到这个知识，老师叫你写一个顺序栈（实现初始化，入栈，出栈，删除栈等选择功能），让你设计去给他操作</p><hr><p>  是这种界面好看？  <img src="https://img-blog.csdnimg.cn/20190409172834849.png" alt="在这里插入图片描述"></p><p>  还是…..  <img src="https://img-blog.csdnimg.cn/20190409173137905.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">   </p><h3 id="以下代码基于printf和条件语句"><a href="#以下代码基于printf和条件语句" class="headerlink" title="以下代码基于printf和条件语句"></a><a href></a>以下代码基于printf和条件语句</h3><h4 id="1-简单版"><a href="#1-简单版" class="headerlink" title="1.简单版"></a><a href></a>1.简单版</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">      <span class="keyword">int</span> main（）</span><br><span class="line">      &#123;</span><br><span class="line">      <span class="keyword">while</span>(<span class="number">1</span>)<span class="comment">//死循输入框</span></span><br><span class="line">      &#123;</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"            ******************欢饮来到栈de环节*************\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"______________________________________________________________________________\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"|----&gt;                       请选择输入你要操作的选择                    &lt;----|\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"|----&gt; 1: 创建栈                                                         &lt;----|\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"|----&gt; 2：判断栈是不是空                                                 &lt;----|\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"|----&gt; 3：入栈                                                           &lt;----|\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"|----&gt; 4：出栈                                                           &lt;----|\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"|----&gt; 5：检测栈的长度                                                   &lt;----|\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"|----&gt; 6：清空栈                                                         &lt;----|\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"|----&gt; 7：得到栈顶元素                                                   &lt;----|\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"|----&gt; 8：打印栈的元素                                                   &lt;----|\n"</span> );</span><br><span class="line"><span class="built_in">printf</span> ( <span class="string">"|_____________________________________________________________________________|\n"</span> );</span><br><span class="line"><span class="keyword">int</span> choice;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"请输入你的选择\n"</span>);</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;choice);</span><br><span class="line"><span class="keyword">switch</span>(choice)</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line"></span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line"><span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line"></span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure><p> <img src="https://img-blog.csdnimg.cn/20190409173614883.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p> 弊端：界面是好看多了，但是交互式做的不好，每次用户输入一次就重新显示新的对话框，用户执行多了上下拉的条条就会很长</p><h4 id="2-进阶版"><a href="#2-进阶版" class="headerlink" title="2.进阶版"></a><a href></a>2.进阶版</h4><p> #include&lt;stdio.h&gt;</p><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">  <span class="comment">/*封装输入函数*/</span></span><br><span class="line">    int init()</span><br><span class="line">    &#123;</span><br><span class="line">    int choice, confirm;</span><br><span class="line">    printf(</span><br><span class="line">    </span><br><span class="line"><span class="string">"<span class="subst">\n</span><span class="subst">\t</span>|_________________________________________________________|<span class="subst">\t</span><span class="subst">\n</span>"</span></span><br><span class="line"><span class="string">"<span class="subst">\t</span>|1:初始化队列                                             |<span class="subst">\t</span><span class="subst">\n</span>"</span></span><br><span class="line"><span class="string">"<span class="subst">\t</span>|2:入队                                                   |<span class="subst">\t</span><span class="subst">\n</span>"</span></span><br><span class="line"><span class="string">"<span class="subst">\t</span>|3:出队                                                   |<span class="subst">\t</span><span class="subst">\n</span>"</span></span><br><span class="line"><span class="string">"<span class="subst">\t</span>|4:检测队列长度                                           |<span class="subst">\t</span><span class="subst">\n</span>"</span></span><br><span class="line"><span class="string">"<span class="subst">\t</span>|5:判断队列是否为空                                       |<span class="subst">\t</span><span class="subst">\n</span>"</span></span><br><span class="line"><span class="string">"<span class="subst">\t</span>|6:判断队列是否已满                                       |<span class="subst">\t</span><span class="subst">\n</span>"</span></span><br><span class="line"><span class="string">"<span class="subst">\t</span>|7:清空队列                                               |<span class="subst">\t</span><span class="subst">\n</span>"</span></span><br><span class="line"><span class="string">"<span class="subst">\t</span>|8:销毁队列                                               |<span class="subst">\t</span><span class="subst">\n</span>"</span></span><br><span class="line"><span class="string">"<span class="subst">\t</span>|9:退出程序                                               |<span class="subst">\t</span><span class="subst">\n</span>"</span></span><br><span class="line"><span class="string">"<span class="subst">\t</span>|_________________________________________________________|<span class="subst">\t</span><span class="subst">\n</span><span class="subst">\n</span>"</span></span><br><span class="line">);</span><br><span class="line">printf(<span class="string">"<span class="subst">\t</span>请输入你想进行的操作："</span>);</span><br><span class="line">scanf(<span class="string">" %d"</span>, &amp;choice);</span><br><span class="line">while ((confirm = getchar()) != '\n')<span class="comment">//用户再次输入空格键才表示其真正确认</span></span><br><span class="line">continue;</span><br><span class="line"><span class="comment">//输入检测</span></span><br><span class="line">while (choice != <span class="number">9</span> &amp;&amp; (choice &lt; <span class="number">1</span> || choice &gt; <span class="number">8</span>))<span class="comment">//判断执行1-8，并且检测合法输入</span></span><br><span class="line">&#123;</span><br><span class="line">printf(<span class="string">"<span class="subst">\t</span>您的输入: '%d' 有误!请重新输入："</span>, choice);</span><br><span class="line">scanf(<span class="string">" %d"</span>, &amp;choice);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">return choice;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">int choice;</span><br><span class="line">while ((choice=init())&amp;&amp;choice!=<span class="number">9</span>)</span><br><span class="line">&#123;</span><br><span class="line">printf(<span class="string">"<span class="subst">\n</span><span class="subst">\t</span>程序在进行<span class="subst">\n</span>"</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//以下写你的判断代码</span></span><br><span class="line">&#125;</span><br><span class="line">printf(<span class="string">"<span class="subst">\n</span><span class="subst">\t</span>程序结束，感谢您的使用谢谢<span class="subst">\n</span>"</span>);</span><br><span class="line">system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p> <img src="https://img-blog.csdnimg.cn/20190409180309743.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p> 优点：<br> 1.每执行一次操作都停留在此界面<br> 2.有错误输入判断<br> 3.退出程序直接结束</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;选择交互式界面&quot;&gt;&lt;a href=&quot;#选择交互式界面&quot; class=&quot;headerlink&quot; title=&quot;选择交互式界面&quot;&gt;&lt;/a&gt;&lt;a href&gt;&lt;/a&gt;选择交互式界面&lt;/h2&gt;&lt;p&gt; &lt;strong&gt;一个交互式界面是用户和终端交流的形式&lt;/strong&gt;。是
+      
+    
+    </summary>
+    
+    
+      <category term="CSDN迁移" scheme="http://yoursite.com/tags/CSDN%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手把手写github（5）（界面篇1）</title>
+    <link href="http://yoursite.com/uncategorized/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%86%99github%EF%BC%885%EF%BC%89%EF%BC%88%E7%95%8C%E9%9D%A2%E7%AF%871%EF%BC%89/"/>
+    <id>http://yoursite.com/uncategorized/手把手写github（5）（界面篇1）/</id>
+    <published>2019-04-06T08:21:27.000Z</published>
+    <updated>2019-05-02T02:40:54.189Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="界面篇"><a href="#界面篇" class="headerlink" title="界面篇"></a>界面篇</h1><h2 id="——顾名思义就是我只用github不用Git操作"><a href="#——顾名思义就是我只用github不用Git操作" class="headerlink" title="——顾名思义就是我只用github不用Git操作"></a>——顾名思义就是我只用github不用Git操作</h2><hr><h2 id="毕竟git代码还是不如直接操作简单。比如说我上传东西到远程仓库github代码几行才搞的定，我这里只要点一些创建、写入、提交就行了（还不用记住那些代码）"><a href="#毕竟git代码还是不如直接操作简单。比如说我上传东西到远程仓库github代码几行才搞的定，我这里只要点一些创建、写入、提交就行了（还不用记住那些代码）" class="headerlink" title=" 毕竟git代码还是不如直接操作简单。比如说我上传东西到远程仓库github代码几行才搞的定，我这里只要点一些创建、写入、提交就行了（还不用记住那些代码） "></a> 毕竟git代码还是不如直接操作简单。比如说我上传东西到远程仓库github代码几行才搞的定，我这里只要点一些创建、写入、提交就行了（还不用记住那些代码） </h2><h3 id="1-创建文件夹"><a href="#1-创建文件夹" class="headerlink" title="1.创建文件夹"></a><a href></a>1.创建文件夹</h3><p> 不少人都点击创建文件时候出来的结果都是一个文件而不是文件夹,而且上传时候也是只能上传那种带后缀的（例.c .py）文件，而不能上传文件夹，其实不然，都是可以的。</p><p> (1)点击creat new file<br> <img src="https://img-blog.csdnimg.cn/20190406160422763.png" alt="在这里插入图片描述"><br> 如果你只是写一个名字就提交了</p><p> 结果是：这样<br> <img src="https://img-blog.csdnimg.cn/20190406160511698.png" alt="在这里插入图片描述"><br> 出现的是文件形式  </p><p>  but…<br> (2)在saS后面加一个/<br> <img src="https://img-blog.csdnimg.cn/20190406160857863.png" alt="在这里插入图片描述"><br> github这边就会自动帮我们识别为一个文件夹，这时候后面可以再建一个子文件夹（和刚刚一样或者就加一个文件）<br> （3）提交后<br> <img src="https://img-blog.csdnimg.cn/20190406161209365.png" alt="在这里插入图片描述"><br> 就会出现文件夹格式了（我改了名字）</p><h3 id="2-上传一个文件夹"><a href="#2-上传一个文件夹" class="headerlink" title="2.上传一个文件夹"></a>2.上传一个文件夹</h3><p> <img src="https://img-blog.csdnimg.cn/20190406161625554.png" alt="在这里插入图片描述"> 点击Upload files <img src="https://img-blog.csdnimg.cn/20190406161844197.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">  </p><p> 如果你是点击choose your files就只能上传文件了。<br> 上传文件夹就直接拖拉文件夹到这个位置就行了。  </p><h3 id="未完待续…"><a href="#未完待续…" class="headerlink" title="未完待续…."></a>未完待续….</h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;界面篇&quot;&gt;&lt;a href=&quot;#界面篇&quot; class=&quot;headerlink&quot; title=&quot;界面篇&quot;&gt;&lt;/a&gt;界面篇&lt;/h1&gt;&lt;h2 id=&quot;——顾名思义就是我只用github不用Git操作&quot;&gt;&lt;a href=&quot;#——顾名思义就是我只用github不用Git操作&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="CSDN迁移" scheme="http://yoursite.com/tags/CSDN%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手把手学会gitbub（4）</title>
+    <link href="http://yoursite.com/uncategorized/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%AD%A6%E4%BC%9Agitbub%EF%BC%884%EF%BC%89/"/>
+    <id>http://yoursite.com/uncategorized/手把手学会gitbub（4）/</id>
+    <published>2019-04-05T08:38:20.000Z</published>
+    <updated>2019-05-02T02:40:55.259Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="git操作指令windows系统"><a href="#git操作指令windows系统" class="headerlink" title="git操作指令windows系统"></a><a href></a>git操作指令windows系统</h1><p> <img src="C:%5CUsers%5C%E5%AE%8F%E5%A4%A7%E5%A4%A7%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553779673129.png" alt="1553779673129"></p><p> 注：以下操作最好按顺序来！！</p><h2 id="1-用户名和邮箱（自报家门）"><a href="#1-用户名和邮箱（自报家门）" class="headerlink" title="1.用户名和邮箱（自报家门）"></a><a href></a>1.用户名和邮箱（自报家门）</h2><p> 上传或者修改自己的用户名和邮箱</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git<span class="built_in"> config </span>--global user.name <span class="string">"your name"</span></span><br><span class="line"></span><br><span class="line">git<span class="built_in"> config </span>--global user.email <span class="string">"your email"</span></span><br></pre></td></tr></table></figure><p> 查看用户名和邮箱</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git<span class="built_in"> config </span>user.name</span><br><span class="line"></span><br><span class="line">git<span class="built_in"> config </span>user.email</span><br></pre></td></tr></table></figure><h2 id="2-创建版本库"><a href="#2-创建版本库" class="headerlink" title="2.创建版本库"></a><a href></a>2.创建版本库</h2><h4 id="1-创建文件夹"><a href="#1-创建文件夹" class="headerlink" title="1.创建文件夹"></a><a href></a>1.创建文件夹</h4><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> learngit</span><br></pre></td></tr></table></figure><h4 id="2-进入到文件夹"><a href="#2-进入到文件夹" class="headerlink" title="2.进入到文件夹"></a><a href></a>2.进入到文件夹</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> 文件名</span><br></pre></td></tr></table></figure><h4 id="3-查看当前所在的文件-显示当前目录"><a href="#3-查看当前所在的文件-显示当前目录" class="headerlink" title="3.查看当前所在的文件(显示当前目录)"></a><a href></a>3.查看当前所在的文件(显示当前目录)</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br></pre></td></tr></table></figure><h4 id="4-把当前目录变为Git可管理的仓库"><a href="#4-把当前目录变为Git可管理的仓库" class="headerlink" title="4.把当前目录变为Git可管理的仓库"></a><a href></a>4.把当前目录变为Git可管理的仓库</h4><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git init</span></span><br></pre></td></tr></table></figure><p> <img src="C:%5CUsers%5C%E5%AE%8F%E5%A4%A7%E5%A4%A7%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553781075071.png" alt="1553781075071"></p><p> 会告诉你是一个空的仓库，Initialized empty Git repository in（已在XXX中初始化空Git存储库）</p><h4 id="5-添加文件到仓库"><a href="#5-添加文件到仓库" class="headerlink" title="5.添加文件到仓库"></a><a href></a>5.添加文件到仓库</h4><p> 1.先新建一个新的文件（有没有后缀都没事）</p><p> 2.git add 文件名（有后缀的加后缀）</p><p> 3.用命令 <code>git commit</code> 告诉Git，把文件提交到仓库：</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git</span> commit -m <span class="string">"随便写（就是文件的说明）"</span></span><br></pre></td></tr></table></figure><p> <img src="C:%5CUsers%5C%E5%AE%8F%E5%A4%A7%E5%A4%A7%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1553784785215.png" alt="1553784785215"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;git操作指令windows系统&quot;&gt;&lt;a href=&quot;#git操作指令windows系统&quot; class=&quot;headerlink&quot; title=&quot;git操作指令windows系统&quot;&gt;&lt;/a&gt;&lt;a href&gt;&lt;/a&gt;git操作指令windows系统&lt;/h1&gt;&lt;p&gt; &lt;
+      
+    
+    </summary>
+    
+    
+      <category term="CSDN迁移" scheme="http://yoursite.com/tags/CSDN%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手把手学会github（3）</title>
+    <link href="http://yoursite.com/uncategorized/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%AD%A6%E4%BC%9Agithub%EF%BC%883%EF%BC%89/"/>
+    <id>http://yoursite.com/uncategorized/手把手学会github（3）/</id>
+    <published>2019-02-28T02:08:20.000Z</published>
+    <updated>2019-05-02T02:40:56.416Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-git和github的区别"><a href="#1-git和github的区别" class="headerlink" title="1.git和github的区别"></a><a href></a>1.git和github的区别</h1><p> git</p><p> 是一个版本管理工具，是可以在你电脑不联网的情况下，只在本地使用的一个版本管理工具，其作用就是可以让你更好的管理你的程序，比如你原来提交过的内容，以后虽然修改了，但是通过git这个工具，可以把你原来提交的内容重现出来，这样对于你后来才意识到的一些错误的更改，可以进行还原。<strong>git用的是Linux指令，要想深入的建议去看视频或者上<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a>官网看指令,如果只是小小的输出执行指令就上网查那些基本指令就行啦</strong></p><p> github</p><p> 是一个非常适合程序员交流的网站，很多国际上的技术大牛都在github上有自己的开源代码，其他人只要申请个账号就可以随意的看到这些大牛写的程序。同时国内的很多互联网公司如百度，阿里等，也在github上公布有开源的代码，感兴趣的程序员也可以自己查找着看一些。想看国内大公司的代码，可以看连接</p><h2 id="2-下载git"><a href="#2-下载git" class="headerlink" title="2.下载git"></a><a href></a>2.下载git</h2><p> 点击官网<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a><br> <img src="https://img-blog.csdnimg.cn/20190228100003167.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 根据自己的系统选择<br> <img src="https://img-blog.csdnimg.cn/20190228100054732.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 注：<strong>以下的安装操作过程可能根据版本不同不分先后！！</strong><br> <img src="https://img-blog.csdnimg.cn/20190228100159817.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20190228100328781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20190228100341940.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20190228100400985.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt><br> <img src="https://img-blog.csdnimg.cn/20190228100429613.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 剩下的一路下一步<br> <img src="https://img-blog.csdnimg.cn/20190228100504417.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 最后一步就是把勾勾去掉<br> <img src="https://img-blog.csdnimg.cn/20190228100535384.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h3 id="3-检验自己是否安装成功"><a href="#3-检验自己是否安装成功" class="headerlink" title="3.检验自己是否安装成功"></a><a href></a>3.检验自己是否安装成功</h3><p> 跳转到桌面鼠标右键，看看有没有Git GUI Here 和Git Bash Here，有就安装成功了<br> <img src="https://img-blog.csdnimg.cn/20190228100707561.png" alt="在这里插入图片描述"></p><h4 id="恭喜！！"><a href="#恭喜！！" class="headerlink" title="恭喜！！"></a><a href></a>恭喜！！</h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;1-git和github的区别&quot;&gt;&lt;a href=&quot;#1-git和github的区别&quot; class=&quot;headerlink&quot; title=&quot;1.git和github的区别&quot;&gt;&lt;/a&gt;&lt;a href&gt;&lt;/a&gt;1.git和github的区别&lt;/h1&gt;&lt;p&gt; git&lt;/
+      
+    
+    </summary>
+    
+    
+      <category term="CSDN迁移" scheme="http://yoursite.com/tags/CSDN%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手把手学会github（2）</title>
+    <link href="http://yoursite.com/uncategorized/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%AD%A6%E4%BC%9Agithub%EF%BC%882%EF%BC%89/"/>
+    <id>http://yoursite.com/uncategorized/手把手学会github（2）/</id>
+    <published>2019-02-16T05:05:52.000Z</published>
+    <updated>2019-05-02T02:40:56.950Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p><code>工欲善其事必先利其器</code> ！！！</p></blockquote><h1 id="1-个人主页"><a href="#1-个人主页" class="headerlink" title="1.个人主页"></a><a href></a>1.个人主页</h1><p> <img src="https://img-blog.csdnimg.cn/20190216122522437.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <strong><strong>仓库主页（前提你已经新建了一个新仓库）</strong></strong><br> <img src="https://img-blog.csdnimg.cn/20190216123234828.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20190216123519244.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 删除仓库<br> <img src="https://img-blog.csdnimg.cn/20190216123606359.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20190216123642138.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 注：删除要仓库名和密码验证</p><h2 id="2-接下来就是创建一个新仓库"><a href="#2-接下来就是创建一个新仓库" class="headerlink" title="2.接下来就是创建一个新仓库"></a><a href></a>2.接下来就是创建一个新仓库</h2><p> 进入主页点击new（绿色的）<br> <img src="https://img-blog.csdnimg.cn/20190216124310607.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p> <strong>创建完成后就是有一个新仓库了接下来就是创建新文件，上传文件</strong><br> <img src="https://img-blog.csdnimg.cn/20190216124747132.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <strong>1.创建新文件</strong><br> <img src="https://img-blog.csdnimg.cn/20190216125114572.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 创建完成后就是<br> <img src="https://img-blog.csdnimg.cn/20190216125221533.png" alt="在这里插入图片描述"><br> <strong>2.上传文件</strong><br> <img src="https://img-blog.csdnimg.cn/20190216125329186.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 手动拖或者预览上传</p><p> <strong>3.编辑，删除（都会显示commits次数）</strong></p><p> <img src="https://img-blog.csdnimg.cn/20190216125556574.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p> <img src="https://img-blog.csdnimg.cn/20190216125727680.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 编辑和删除还有更多操作呢！<br> 编辑：<br> <img src="https://img-blog.csdnimg.cn/20190216125947852.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20190216130108338.png" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20190216130212523.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 删除：<br> 同理</p><h3 id="反正就是很具体的一个github"><a href="#反正就是很具体的一个github" class="headerlink" title="反正就是很具体的一个github"></a><a href></a>反正就是很具体的一个github</h3><p> 剑气纵横三万里，一剑光寒十九州。<br> 不去自己尝试还真的不知道有那么多<br> 问君能有几多愁，你操作有多油！</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;工欲善其事必先利其器&lt;/code&gt; ！！！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;1-个人主页&quot;&gt;&lt;a href=&quot;#1-个人主页&quot; class=&quot;headerlink&quot; title=&quot;1.个人主页&quot;&gt;&lt;/a&gt;&lt;a hre
+      
+    
+    </summary>
+    
+    
+      <category term="CSDN迁移" scheme="http://yoursite.com/tags/CSDN%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手把手学会github（1）</title>
+    <link href="http://yoursite.com/uncategorized/%E6%89%8B%E6%8A%8A%E6%89%8B%E5%AD%A6%E4%BC%9Agithub%EF%BC%881%EF%BC%89/"/>
+    <id>http://yoursite.com/uncategorized/手把手学会github（1）/</id>
+    <published>2019-02-16T03:45:36.000Z</published>
+    <updated>2019-05-02T02:40:57.641Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="什么是github"><a href="#什么是github" class="headerlink" title="什么是github"></a><a href></a>什么是github</h1><p> <strong>前言</strong>：作为各界大佬 必用的博客，github的功能很强大，它是开源的，GitHub聚集了开源社区中顶尖的项目与开发者，也推动了很多新项目的发展，可以上传文件，写项目，写代码等等，它的功能强大也就意味它的操作就没有像微博，csdn等博客那么简单。</p><p> <strong>小要点</strong>：因为这是外国人创建的，我们也是用外国的服务器操作，所以操作过程有点慢还是正常，而且它是全英文的，不建议用什么插件来翻译它（这样才能感受它带来的魅力！！），最好的插件就是百度翻译。</p><h2 id="在开始创建github账号之前要了解几个名词"><a href="#在开始创建github账号之前要了解几个名词" class="headerlink" title="在开始创建github账号之前要了解几个名词"></a><a href></a>在开始创建github账号之前要了解几个名词</h2><blockquote><p>注：这要讲的可能有点无聊，但是很重要！！！而且是你创建账号后在主页并且你经常要点击的几个英文字母</p><p> <strong>1.仓库（repository）</strong><br> 就是你的项目名称，相当于你的一个大c盘，里面放和某个项目有关的东西</p></blockquote><p> <strong>2.收藏（star）</strong><br> 就是你可以收藏别人的项目，别人可以收藏你的项目，但是github会注明原创是谁（是不是不用怕被侵权咯！）还有，就是看你粉丝有多少咯</p><p> <strong>3.复制克隆改进项目（fork）</strong><br> 就是别人想改你的项目 或者 你想改别人的项目就点击这个</p><blockquote><p>进入项目后</p><p> <strong>1.code</strong><br> 就是你的项目子目录（有readme，你写的项目，上传的文件等）</p></blockquote><p> <strong>2.issue（问题）</strong><br> 就是别人和你讨论的发言</p><p> <strong>3.pull request（拉起请求）</strong><br> 就是你改了别人的东西想让别人也同步你方案就可以点击这个<br> <img src="https://img-blog.csdnimg.cn/20190216113018182.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="上面有关注，点赞"><br> <strong>关注（watch）</strong><br> 就是你点了订阅别人的，别人这个项目有进展你就会第一时间收到</p><p> <strong>点赞（star）</strong><br> 你懂得</p><h3 id="接下来就是创建账号咯（github-com）"><a href="#接下来就是创建账号咯（github-com）" class="headerlink" title="接下来就是创建账号咯（github.com）"></a><a href></a>接下来就是创建账号咯（<a href="http://github.com" target="_blank" rel="noopener">github.com</a>）</h3><p> <img src="https://img-blog.csdnimg.cn/20190216113824626.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <strong>用户名写英文或者有数字！</strong><br> <img src="https://img-blog.csdnimg.cn/2019021611404570.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 这里有三步，记得第一步要验证邮箱（必须把github邮箱拉近白名单不然收不到）<br> 接下来就第二步第三步就行了，注意第二步要选择公开（public）或者是私人（private）私人是要钱的，就公开就行啦！又不是见不得人</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">接下来就擦创建完成啦！！！</span><br></pre></td></tr></table></figure><h2 id="Author-by-宏大大"><a href="#Author-by-宏大大" class="headerlink" title="Author by 宏大大"></a><a href></a>Author by 宏大大</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;什么是github&quot;&gt;&lt;a href=&quot;#什么是github&quot; class=&quot;headerlink&quot; title=&quot;什么是github&quot;&gt;&lt;/a&gt;&lt;a href&gt;&lt;/a&gt;什么是github&lt;/h1&gt;&lt;p&gt; &lt;strong&gt;前言&lt;/strong&gt;：作为各界大佬 必用
+      
+    
+    </summary>
+    
+    
+      <category term="CSDN迁移" scheme="http://yoursite.com/tags/CSDN%E8%BF%81%E7%A7%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>单片机笔记1.1</title>
+    <link href="http://yoursite.com/uncategorized/%E5%8D%95%E7%89%87%E6%9C%BA%E7%AC%94%E8%AE%B01.1/"/>
+    <id>http://yoursite.com/uncategorized/单片机笔记1.1/</id>
+    <published>2019-01-20T14:06:34.000Z</published>
+    <updated>2019-05-02T02:40:58.233Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="单片机笔记"><a href="#单片机笔记" class="headerlink" title="单片机笔记"></a><a href></a>单片机笔记</h1><p> Author by <strong>宏大大</strong> Time：<strong>2019.1.20</strong> content：<strong>单片机stm32</strong><br> 其实就是小弟的一些心得和见解，学习的过程中有点很多问题，就记录最基本的，总的来说学习硬件还是挺好的，毕竟纯软的话自己也没什么兴趣，最大的殷切就是希望自己能够坚持下来，不管最后自己是继续走纯硬，还是软硬结合（即嵌入式），亦或者是放弃了（还是不要这么说），能学到一份技术对未来真的有很大的帮助！</p><h2 id="单片机1-1之建工程的要点"><a href="#单片机1-1之建工程的要点" class="headerlink" title="单片机1.1之建工程的要点"></a><a href></a>单片机1.1之建工程的要点</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">前方高能！！！</span><br></pre></td></tr></table></figure><p> 1.<strong>新建项目工程</strong>，一开始保存工程到文件夹（我叫他一号文件夹），然后在一号文件夹里面建立二号文件USER、OBJ（就是要把生成的.hex文件放在这里）、COER、FWLIB、还有自己需要的例如LED、BEEP…再吧对应的.c和.文件放在二号文件里面。</p><p> 2.<strong>把二号文件加到项目工程（注：OBJ文件不添加进去）里面</strong>：<br> <img src="https://img-blog.csdnimg.cn/20190120215235972.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> <img src="https://img-blog.csdnimg.cn/20190120215252927.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 3.<strong>然后就是让编译生成的.hex文件默认放在OBJ文件下</strong>：点击魔术棒，玩mdk的应该都知道魔术棒在哪里，然后…<br> <img src="https://img-blog.csdnimg.cn/20190120215534510.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 4.<strong>让电脑认识.h文件</strong>：还是点魔术棒…<br> <img src="https://img-blog.csdnimg.cn/20190120215650239.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDU4NzI0Ng==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 反正吧上面的二号文件全部放进去，要注意，每写新的文件就是说有了新的.h文件要使用就要path进来</p><p> 5.在第四步图片那里的Define写 <code>STM32F10X_HD,USE_STDPERIPH_DRIVER</code> </p><p> 6.<strong>编译一下</strong>才可以看到头文件被包含，要是看到0 error和0 warming更加欣喜啦（自信点）</p><p> 7.写mdk5防止写注释出现乱码：edit-》configuration-》encoding调成chinese GB2312，然后tab size调到4</p><h3 id="下期预告"><a href="#下期预告" class="headerlink" title="下期预告"></a><a href></a>下期预告</h3><pre><code>1.2 | 代码寄存器库函数     --- | ------------- 1.3 | 自己手写一个工程（开源过）</code></pre><p>放一段代码</p><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#include <span class="string">"key.h"</span></span><br><span class="line">#include <span class="string">"stm32f10x.h"</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">void key_init(void)</span><br><span class="line">&#123;</span><br><span class="line">RCC-&gt;APB2ENR|=<span class="number">1</span>&lt;&lt;<span class="number">2</span>;</span><br><span class="line">RCC-&gt;APB2ENR|=<span class="number">1</span>&lt;&lt;<span class="number">6</span>;</span><br><span class="line"></span><br><span class="line">GPIOA-&gt;CRL&amp;=<span class="number">0XFFFFFFF0</span>;</span><br><span class="line">GPIOA-&gt;CRL|=<span class="number">0X00000008</span>;<span class="comment">//上拉和下拉输入那块</span></span><br><span class="line">GPIOE-&gt;CRL&amp;=<span class="number">0XFFF000FF</span>;</span><br><span class="line">GPIOE-&gt;CRL|=<span class="number">0X00088800</span>;<span class="comment">//上拉和下拉输入那块</span></span><br><span class="line">GPIOA-&gt;ODR|=<span class="number">0</span>&lt;&lt;<span class="number">0</span>;<span class="comment">//pa0先置低</span></span><br><span class="line">GPIOE-&gt;ODR|=<span class="number">1</span>&lt;&lt;<span class="number">2</span>|<span class="number">1</span>&lt;&lt;<span class="number">3</span>|<span class="number">1</span>&lt;&lt;<span class="number">4</span>;<span class="comment">//pe2~4置高</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;单片机笔记&quot;&gt;&lt;a href=&quot;#单片机笔记&quot; class=&quot;headerlink&quot; title=&quot;单片机笔记&quot;&gt;&lt;/a&gt;&lt;a href&gt;&lt;/a&gt;单片机笔记&lt;/h1&gt;&lt;p&gt; Author by &lt;strong&gt;宏大大&lt;/strong&gt; Time：&lt;strong&gt;2
+      
+    
+    </summary>
+    
+    
+      <category term="CSDN迁移" scheme="http://yoursite.com/tags/CSDN%E8%BF%81%E7%A7%BB/"/>
     
   </entry>
   
