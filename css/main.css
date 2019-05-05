@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ec7fbf;
+  background: #baa417;
 }
 .feed-link,
 .chat {
@@ -3121,4 +3121,7 @@ a#download:hover {
 }
 :active {
   cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"), auto !important;
+}
+body {
+  background: url("/images/beijing.jpg");
 }
